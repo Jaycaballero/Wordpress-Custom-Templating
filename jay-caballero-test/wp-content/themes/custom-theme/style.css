@@ -1,0 +1,490 @@
+/*
+Theme Name: Custom Theme
+Author: Jay Caballero
+Description: Test
+Version: 0.0.1
+*/
+/*
+=============================
+Main style
+=============================
+*/
+/*
+=============================
+Fonts
+=============================
+*/
+@font-face {
+  font-family: 'WorkSans-Regular';
+  src: url("fonts/work-sans/WorkSans-Regular.ttf") format("truetype"); }
+@font-face {
+  font-family: 'WorkSans-Light';
+  src: url("fonts/work-sans/WorkSans-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Roboto-Light';
+  src: url("fonts/roboto/Roboto-Light.ttf") format("truetype"); }
+@font-face {
+  font-family: 'WorkSans-SemiBold';
+  src: url("fonts/work-sans/WorkSans-SemiBold.ttf") format("truetype"); }
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("fonts/roboto/Roboto-Bold.ttf") format("truetype"); }
+/*
+=============================
+Headings and Globals
+=============================
+*/
+h1 {
+  font-size: 60px;
+  font-family: WorkSans-Light; }
+
+h2 {
+  font-size: 35px;
+  font-family: WorkSans-Regular;
+  letter-spacing: -1px; }
+
+h3 {
+  font-size: 30px;
+  font-family: WorkSans-SemiBold; }
+
+h4 {
+  font-size: 17px;
+  font-family: 'WorkSans-SemiBold'; }
+
+h5 {
+  font-size: 15px;
+  font-family: 'WorkSans-SemiBold'; }
+
+.section-text-content p {
+  font-size: 17px;
+  font-family: Roboto-Light; }
+
+.call-to-action {
+  font-family: Roboto-Bold;
+  font-size: 15px; }
+
+/*
+=============================
+Header Section
+=============================
+*/
+#top .navbar-brand img {
+  width: 245px !important; }
+#top ul#menu-main-menu li {
+  margin-right: 15px; }
+  #top ul#menu-main-menu li a {
+    color: #0c0c0e;
+    font-family: WorkSans-SemiBold;
+    font-size: 15px; }
+#top li#header_widget-2 {
+  display: none; }
+#top .header-buttons a {
+  border-radius: 30px;
+  padding: 12px 30px;
+  text-decoration: none;
+  color: #fff;
+  text-align: center; }
+#top .header-buttons a.header-button-1 {
+  border: 1px solid #003878;
+  background-color: #003878; }
+#top .header-buttons a.header-button-2 {
+  border: 1px solid #f47820;
+  background-color: #f47820; }
+
+/*
+=============================
+Header Section
+=============================
+*/
+section#header-banner {
+  min-height: 877px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  display: flex; }
+  section#header-banner .row {
+    height: 100%; }
+    section#header-banner .row .header-banner-content {
+      display: flex;
+      align-items: center;
+      height: 100%; }
+      section#header-banner .row .header-banner-content .banner-subtext p {
+        font-size: 17px;
+        text-transform: uppercase; }
+    section#header-banner .row .banner-subtext p {
+      font-family: WorkSans-SemiBold; }
+
+/*
+=============================
+Areas of Expertise Section
+=============================
+*/
+section#expertise {
+  padding: 120px 0; }
+  section#expertise .section-title {
+    color: #939393;
+    font-family: WorkSans-SemiBold; }
+  section#expertise .expertise-wrapper h4 {
+    width: 63%;
+    display: table;
+    margin: auto; }
+
+/*
+=============================
+Why Lorem Section
+=============================
+*/
+section#why-lorem {
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+  padding: 100px 0; }
+  section#why-lorem ul.lorem-list li {
+    float: left;
+    width: 50%; }
+    section#why-lorem ul.lorem-list li .count-number {
+      font-size: 48px;
+      color: #f58233;
+      font-family: WorkSans-SemiBold; }
+    section#why-lorem ul.lorem-list li .lorem-text p {
+      font-size: 17px; }
+    section#why-lorem ul.lorem-list li:first-child {
+      padding-right: 50px; }
+    section#why-lorem ul.lorem-list li:nth-child(2) {
+      margin-top: 110px;
+      padding-left: 50px; }
+    section#why-lorem ul.lorem-list li:last-child {
+      margin-top: -90px;
+      padding-right: 50px; }
+    section#why-lorem ul.lorem-list li .lorem-text p {
+      font-family: 'WorkSans-Light'; }
+
+/*
+=============================
+Business Outcomes
+=============================
+*/
+section#business-outcomes {
+  padding: 75px 0; }
+  section#business-outcomes .section-title {
+    color: #939393; }
+  section#business-outcomes .outcome-wrapper p {
+    font-family: 'WorkSans-Light';
+    font-size: 17px; }
+
+/*
+=============================
+Footer
+=============================
+*/
+footer {
+  background-color: #003878;
+  padding: 75px 0 60px; }
+  footer .footer-buttons a {
+    border-radius: 30px;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center; }
+  footer .footer-buttons a.footer-button-1 {
+    border: 1px solid #fff; }
+  footer .footer-buttons a.footer-button-2 {
+    border: 1px solid #f47820;
+    background-color: #f47820;
+    padding: 12px 40px; }
+  footer li#wpb_widget-3 {
+    display: none; }
+  footer .footer-subtext p {
+    font-family: WorkSans-SemiBold;
+    text-transform: uppercase;
+    font-size: 17px; }
+
+/*
+=============================
+Responsive
+=============================
+*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 50px; }
+
+  h2 {
+    font-size: 30px; }
+
+  section#top .col-4 {
+    width: 30%; }
+  section#top .col-8 {
+    width: 70%; }
+  section#top .menu-wrapper .nav-wrapper {
+    display: table !important;
+    float: left;
+    width: 56%; }
+  section#top .menu-wrapper .header-button-wrapper {
+    float: left;
+    width: 44%;
+    display: table !important;
+    margin-top: 6px; }
+  section#top .header-buttons a {
+    padding: 12px 18px; }
+  section#top ul#menu-main-menu li {
+    margin-right: 5px; }
+
+  section#header-banner {
+    min-height: 450px; }
+
+  section#expertise .expertise-wrapper h4 {
+    width: 85%; }
+
+  section#why-lorem {
+    background-size: cover; }
+    section#why-lorem .section-text-content {
+      width: 80%; }
+    section#why-lorem ul.lorem-list li {
+      background-color: #fff;
+      padding: 30px !important;
+      border-radius: 10px;
+      width: calc(50% - 20px); }
+      section#why-lorem ul.lorem-list li:nth-child(2) {
+        margin-left: 30px; }
+      section#why-lorem ul.lorem-list li:last-child {
+        margin-top: -108px; } }
+@media (min-width: 768px) and (max-width: 991px) {
+  h1 {
+    font-size: 40px; }
+
+  h2 {
+    font-size: 25px; }
+
+  h4 {
+    font-size: 16px; }
+
+  section#top .container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%; }
+  section#top #navbarNavDropdown {
+    margin-bottom: 30px;
+    background-color: #212529;
+    padding: 20px 35px; }
+    section#top #navbarNavDropdown ul#menu-main-menu li a {
+      text-align: left;
+      color: #fff;
+      font-size: 16px; }
+  section#top .navbar-light .navbar-brand {
+    margin-left: 35px; }
+  section#top nav.navbar .navbar-toggler {
+    margin-right: 35px; }
+  section#top .col-8 {
+    width: 100% !important;
+    flex: none; }
+  section#top .menu-wrapper {
+    text-align: center !important;
+    margin: 25px 0 18px; }
+  section#top .nav-wrapper {
+    width: 100%;
+    display: table !important; }
+
+  section#header-banner {
+    min-height: 350px; }
+    section#header-banner .row .header-banner-content .banner-subtext p {
+      font-size: 16px; }
+
+  section#expertise {
+    padding: 60px 0; }
+    section#expertise .expertise-wrapper h4 {
+      width: 100%; }
+
+  section#why-lorem {
+    padding: 60px 0;
+    background-size: cover;
+    position: relative; }
+    section#why-lorem .why-lorem-content {
+      width: 100% !important; }
+    section#why-lorem ul.lorem-list li {
+      background-color: #fff;
+      padding: 30px !important;
+      border-radius: 10px;
+      width: calc(50% - 15px); }
+      section#why-lorem ul.lorem-list li:first-child {
+        height: 387px; }
+      section#why-lorem ul.lorem-list li:nth-child(2) {
+        margin-left: 30px;
+        margin-top: 0; }
+      section#why-lorem ul.lorem-list li:last-child {
+        margin-top: 30px;
+        width: 100%; }
+    section#why-lorem .why-lorem-intro-wrapper {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px; }
+    section#why-lorem .lorem-list {
+      margin-top: 33px !important; }
+
+  section#business-outcomes .col-3 {
+    width: 50%;
+    flex: none; }
+    section#business-outcomes .col-3 .outcome-wrapper {
+      margin-bottom: 30px; } }
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px; }
+
+  h2 {
+    font-size: 23px; }
+
+  h3 {
+    font-size: 20px; }
+
+  h4 {
+    font-size: 16px; }
+
+  section#top .container {
+    padding: 0;
+    margin: 0;
+    max-width: 100%; }
+  section#top #navbarNavDropdown {
+    margin-bottom: 30px;
+    background-color: #212529;
+    padding: 20px 12px; }
+    section#top #navbarNavDropdown ul#menu-main-menu li a {
+      text-align: left;
+      color: #fff;
+      font-size: 16px; }
+  section#top .navbar-light .navbar-brand {
+    margin-left: 12px; }
+  section#top nav.navbar .navbar-toggler {
+    margin-right: 12px; }
+  section#top .nav-wrapper {
+    width: 100%;
+    display: table !important; }
+  section#top .col-8 {
+    width: 100% !important;
+    flex: none; }
+  section#top .menu-wrapper {
+    text-align: center !important;
+    margin: 25px 0 18px; }
+
+  section#header-banner {
+    min-height: 220px; }
+    section#header-banner > .container {
+      z-index: 1; }
+    section#header-banner .row .header-banner-content .banner-subtext p {
+      font-size: 15px; }
+    section#header-banner .custom-ovarley {
+      background-color: rgba(0, 0, 0, 0.7);
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0; }
+
+  section#expertise {
+    padding: 45px 0; }
+    section#expertise .expertise-wrapper {
+      margin-bottom: 30px; }
+      section#expertise .expertise-wrapper h4 {
+        width: 100%; }
+    section#expertise .col-3 {
+      width: 50%;
+      flex: none; }
+
+  section#why-lorem {
+    padding: 40px 0;
+    background-size: cover;
+    position: relative; }
+    section#why-lorem .why-lorem-content {
+      width: 100% !important; }
+    section#why-lorem ul.lorem-list li {
+      float: none;
+      width: 100%;
+      background-color: #fff;
+      padding: 30px !important;
+      border-radius: 10px;
+      margin: 0 0 30px !important; }
+    section#why-lorem .why-lorem-intro-wrapper {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px; }
+    section#why-lorem .lorem-list {
+      margin-top: 33px !important; }
+
+  section#business-outcomes {
+    padding: 45px 0; }
+    section#business-outcomes .col-3 {
+      width: 50%;
+      flex: none; }
+      section#business-outcomes .col-3 .outcome-wrapper {
+        margin-bottom: 30px; }
+
+  footer {
+    padding: 45px 0; }
+    footer .footer-subtext p {
+      font-size: 15px; }
+    footer .footer-buttons {
+      margin-top: 30px; }
+    footer .footer-logo-copyright {
+      margin-top: 20px !important; } }
+@media (max-width: 480px) {
+  h1 {
+    font-size: 25px; }
+
+  h2 {
+    font-size: 21px; }
+
+  section#top .navbar-brand img {
+    width: 200px !important; }
+  section#top .header-button-wrapper {
+    display: table !important;
+    width: 100%;
+    padding: 0 12px; }
+  section#top .header-buttons a.call-to-action {
+    display: table;
+    width: 100%; }
+  section#top .header-buttons a.header-button-1 {
+    margin-bottom: 10px; }
+
+  section#header-banner {
+    min-height: 240px !important; }
+    section#header-banner .banner-subtext p {
+      margin-bottom: 0; }
+
+  section#expertise .col-3 {
+    width: 100%; }
+  section#expertise .expertise-wrapper h4 {
+    width: 75%; }
+
+  section#why-lorem .why-lorem-intro-wrapper {
+    padding: 20px; }
+  section#why-lorem ul.lorem-list {
+    margin-top: 15px !important; }
+    section#why-lorem ul.lorem-list li {
+      padding: 20px !important;
+      margin: 0 0 15px !important; }
+
+  section#business-outcomes .col-3 {
+    width: 100% !important; }
+
+  footer .footer-buttons {
+    width: 100%;
+    margin-top: 20px; }
+    footer .footer-buttons a.call-to-action {
+      display: table;
+      width: 100%;
+      margin-bottom: 15px;
+      margin-right: 0 !important; }
+  footer .footer-logo-copyright {
+    margin-top: 0 !important;
+    padding-top: 20px !important; }
+    footer .footer-logo-copyright .col-6 {
+      width: 100%;
+      display: table;
+      margin: auto;
+      text-align: center;
+      flex: none; }
+    footer .footer-logo-copyright .copyright-text {
+      text-align: center !important;
+      margin-top: 20px; } }
+
+/*# sourceMappingURL=style.css.map */

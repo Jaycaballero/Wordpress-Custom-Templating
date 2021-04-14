@@ -1,0 +1,598 @@
+/*
+Theme Name: Custom Theme
+Author: Jay Caballero
+Description: Test
+Version: 0.0.1
+*/
+
+/*
+=============================
+Main style
+=============================
+*/
+
+/*
+=============================
+Fonts
+=============================
+*/
+
+@font-face {
+	font-family: 'WorkSans-Regular';
+	src: url('fonts/work-sans/WorkSans-Regular.ttf')  format("truetype");
+}
+@font-face {
+	font-family: 'WorkSans-Light';
+	src: url('fonts/work-sans/WorkSans-Light.ttf')  format("truetype");
+}
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url('fonts/roboto/Roboto-Light.ttf')  format("truetype");
+}
+@font-face {
+	font-family: 'WorkSans-SemiBold';
+	src: url('fonts/work-sans/WorkSans-SemiBold.ttf')  format("truetype");
+}
+@font-face {
+	font-family: 'Roboto-Bold';
+	src: url('fonts/roboto/Roboto-Bold.ttf')  format("truetype");
+}
+
+
+/*
+=============================
+Headings and Globals
+=============================
+*/
+h1 { font-size: 60px; font-family: WorkSans-Light; }
+h2 { font-size: 35px; font-family: WorkSans-Regular; letter-spacing: -1px }
+h3 { font-size: 30px; font-family: WorkSans-SemiBold; }
+h4 { font-size: 17px; font-family: 'WorkSans-SemiBold'; }
+h5 { font-size: 15px; font-family: 'WorkSans-SemiBold'; }
+.section-text-content p { font-size: 17px; font-family: Roboto-Light; }
+.call-to-action { font-family: Roboto-Bold; font-size: 15px; }
+
+
+/*
+=============================
+Header Section
+=============================
+*/
+#top {
+	.navbar-brand img {
+		width: 245px !important;
+	}
+	ul#menu-main-menu li {
+		margin-right: 15px;
+		a {
+			color: #0c0c0e; font-family: WorkSans-SemiBold; font-size: 15px;
+		}
+	}
+	li#header_widget-2 {
+		display: none;
+	}
+	.header-buttons {
+		a {
+			border-radius: 30px;
+			padding: 12px 30px;
+			text-decoration: none;
+			color: #fff;
+			text-align: center;
+		}
+		a.header-button-1 {
+			border: 1px solid #003878;
+			background-color: #003878;
+    	}
+    	a.header-button-2 {
+			border: 1px solid #f47820;
+			background-color: #f47820;
+		}
+	}
+}
+
+/*
+=============================
+Header Section
+=============================
+*/
+section#header-banner {
+	min-height: 877px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	display: flex;
+	.row {
+		height: 100%;
+		.header-banner-content {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			.banner-subtext p {
+				font-size: 17px;
+				text-transform: uppercase;
+			}
+		}
+		.banner-subtext p {
+			font-family: WorkSans-SemiBold;
+		}
+	}
+}
+
+/*
+=============================
+Areas of Expertise Section
+=============================
+*/
+section#expertise {
+	padding: 120px 0;
+	.section-title { 
+		color: #939393;
+		font-family: WorkSans-SemiBold;
+	}
+	.expertise-wrapper h4 {
+		width: 63%;
+		display: table;
+		margin: auto;
+	}
+}
+
+/*
+=============================
+Why Lorem Section
+=============================
+*/
+section#why-lorem {
+	background-size: contain;
+	background-position: center right;
+	background-repeat: no-repeat;
+	padding: 100px 0;
+	ul.lorem-list li {
+		float: left;
+		width: 50%;
+		.count-number {
+			font-size: 48px;
+			color: #f58233;
+			font-family: WorkSans-SemiBold;
+		}
+		.lorem-text p { font-size: 17px; }
+		&:first-child {
+			padding-right: 50px;
+		}
+		&:nth-child(2) {
+    		margin-top: 110px;
+    		padding-left: 50px;
+		}
+		&:last-child {
+    		margin-top: -90px;
+    		padding-right: 50px;
+		}
+		.lorem-text p {
+			font-family: 'WorkSans-Light';
+		}
+	}
+
+}
+
+/*
+=============================
+Business Outcomes
+=============================
+*/
+section#business-outcomes {
+	padding: 75px 0;
+	.section-title {
+    	color: #939393;
+	}
+	.outcome-wrapper p {
+		font-family: 'WorkSans-Light'; font-size: 17px; 
+	}
+}
+
+/*
+=============================
+Footer
+=============================
+*/
+footer {
+	background-color: #003878;
+	padding: 75px 0 60px;
+	.footer-buttons {
+		a {
+			border-radius: 30px;
+			padding: 12px 30px;
+			text-decoration: none;
+			color: #fff;
+			text-align: center;
+		}
+		a.footer-button-1 {
+			border: 1px solid #fff;
+    	}
+    	a.footer-button-2 {
+			border: 1px solid #f47820;
+			background-color: #f47820;
+			padding: 12px 40px;
+		}
+	}
+	li#wpb_widget-3 {
+		display: none;
+	}
+	.footer-subtext p {
+		font-family: WorkSans-SemiBold; text-transform: uppercase; font-size: 17px;
+	}
+
+}
+
+
+/*
+=============================
+Responsive
+=============================
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	h1 { font-size: 50px; }
+	h2 { font-size: 30px; }
+
+	section#top {
+		.col-4 { width: 30%; }
+		.col-8 { width: 70%; }
+		.menu-wrapper .nav-wrapper {
+			display: table !important;
+			float: left;
+			width: 56%;
+		}
+		.menu-wrapper .header-button-wrapper {
+			float: left;
+			width: 44%;
+			display: table !important;
+			margin-top: 6px;
+		}
+		.header-buttons a {
+		    padding: 12px 18px;
+		}
+		ul#menu-main-menu li {
+			margin-right: 5px;
+		}
+	}
+
+	section#header-banner {
+		min-height: 450px;
+	}
+
+	section#expertise {
+		.expertise-wrapper h4 {
+			width: 85%;
+		}
+	}
+
+	section#why-lorem {
+		background-size: cover;
+		.section-text-content {
+			width: 80%;
+		}
+		ul.lorem-list li {
+			background-color: #fff;
+			padding: 30px !important;
+			border-radius: 10px;
+			width: calc(50% - 20px);
+			&:nth-child(2) {
+				margin-left: 30px;
+			}
+			&:last-child {
+   		 		margin-top: -108px;
+   		 	}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	h1 { font-size: 40px; }
+	h2 { font-size: 25px; }
+	h4 { font-size: 16px; }
+
+	section#top {
+		.container {
+		    padding: 0;
+		    margin: 0;
+		    max-width: 100%;
+		}
+		#navbarNavDropdown {
+			margin-bottom: 30px;
+			background-color: #212529;
+			padding: 20px 35px;
+			ul#menu-main-menu li a {
+				text-align: left;
+				color: #fff;
+				font-size: 16px
+			}
+		}
+		.navbar-light .navbar-brand {
+			margin-left: 35px;
+		}
+		nav.navbar .navbar-toggler {
+			margin-right: 35px;
+		}
+
+		.col-8 {
+			width: 100% !important;
+			flex: none;
+		}
+		.menu-wrapper {
+    		text-align: center !important;
+    		margin: 25px 0 18px;
+		}
+		.nav-wrapper {
+			width: 100%;
+			display: table !important;
+		}
+	}
+
+	section#header-banner {
+		min-height: 350px;
+		.row .header-banner-content .banner-subtext p {
+			font-size: 16px;
+		}
+	}
+
+	section#expertise {
+		padding: 60px 0;
+		.expertise-wrapper h4 {
+			width: 100%;
+		}
+	}
+
+	section#why-lorem {
+		padding: 60px 0;
+		background-size: cover;
+		position: relative;
+		.why-lorem-content {
+			width: 100% !important;
+		}
+		ul.lorem-list li {
+			background-color: #fff;
+			padding: 30px !important;
+			border-radius: 10px;
+			width: calc(50% - 15px);
+			&:first-child {
+				height: 387px;
+			}
+			&:nth-child(2) {
+				margin-left: 30px;
+				margin-top: 0;
+			}
+			&:last-child {
+   		 		margin-top: 30px;
+				width: 100%;
+   		 	}
+		}
+		.why-lorem-intro-wrapper {
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 10px;
+		}
+		.lorem-list {
+			margin-top: 33px !important;
+		}
+	}
+
+	section#business-outcomes {
+		.col-3 {
+			width: 50%; flex: none;
+			.outcome-wrapper {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 767px) {
+
+	h1 { font-size: 28px; }
+	h2 { font-size: 23px; }
+	h3 { font-size: 20px; }
+	h4 { font-size: 16px; }
+
+	section#top {
+		.container {
+		    padding: 0;
+		    margin: 0;
+		    max-width: 100%;
+		}
+		#navbarNavDropdown {
+			margin-bottom: 30px;
+			background-color: #212529;
+			padding: 20px 12px;
+			ul#menu-main-menu li a {
+				text-align: left;
+				color: #fff;
+				font-size: 16px
+			}
+		}
+		.navbar-light .navbar-brand {
+			margin-left: 12px;
+		}
+		nav.navbar .navbar-toggler {
+			margin-right: 12px;
+		}
+		.nav-wrapper {
+			width: 100%;
+			display: table !important;
+		}
+
+		.col-8 {
+			width: 100% !important;
+			flex: none;
+		}
+		.menu-wrapper {
+    		text-align: center !important;
+    		margin: 25px 0 18px;
+		}
+
+	}
+
+	section#header-banner {
+		min-height: 220px;
+		
+		> .container { z-index: 1; }
+		.row .header-banner-content .banner-subtext p {
+			font-size: 15px;
+		}
+		.custom-ovarley {
+			background-color: rgba(0, 0, 0, 0.7);
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+	}
+
+	section#expertise {
+		padding: 45px 0;
+		.expertise-wrapper {
+			margin-bottom: 30px;
+			h4 { width: 100%; }
+		}
+		.col-3 {
+			width: 50%;
+    		flex: none;
+		}
+	}
+
+	section#why-lorem {
+		padding: 40px 0;
+		background-size: cover;
+		position: relative;
+		.why-lorem-content {
+			width: 100% !important;
+		}
+		ul.lorem-list li {
+			float: none;
+			width: 100%;
+			background-color: #fff;
+			padding: 30px !important;
+			border-radius: 10px;
+			margin: 0 0 30px !important;
+		}
+		.why-lorem-intro-wrapper {
+			background-color: #fff;
+			padding: 30px;
+			border-radius: 10px;
+		}
+		.lorem-list {
+			margin-top: 33px !important;
+		}
+	}
+
+	section#business-outcomes {
+		padding: 45px 0;
+		.col-3 {
+			width: 50%;
+			flex: none;
+			.outcome-wrapper {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	footer {
+		padding: 45px 0;
+		.footer-subtext p {
+			font-size: 15px;
+		}
+		.footer-buttons {
+			margin-top: 30px;
+		}
+		.footer-logo-copyright {
+			margin-top: 20px !important;
+		}
+	}
+
+}
+
+@media (max-width: 480px) {
+	h1 { font-size: 25px; }
+	h2 { font-size: 21px; }
+
+	section#top {
+		.navbar-brand img {
+			width: 200px !important;
+		}
+		.header-button-wrapper {
+			display: table !important;
+			width: 100%;
+			padding: 0 12px;
+		}
+		.header-buttons {
+			a.call-to-action {
+				display: table;
+				width: 100%;
+			}
+			a.header-button-1 {
+				margin-bottom: 10px;
+			}
+		}
+	}
+
+	section#header-banner {
+		min-height: 240px !important;
+		.banner-subtext p {
+			margin-bottom: 0;
+		}
+	}
+
+	section#expertise {
+		.col-3 { width: 100%; }
+		.expertise-wrapper h4 {
+			width: 75%;
+		}
+	}
+
+	section#why-lorem {
+		.why-lorem-intro-wrapper {
+			padding: 20px;
+		}
+		ul.lorem-list {
+			margin-top: 15px !important;
+			li {
+				padding: 20px !important;
+				margin: 0 0 15px !important;
+			}
+		}
+	}
+
+	section#business-outcomes {
+		.col-3 { width: 100% !important; }
+	}
+
+	footer {
+		.footer-buttons {
+			width: 100%;
+			margin-top: 20px;
+			a.call-to-action {
+			    display: table;
+			    width: 100%;
+			    margin-bottom: 15px;
+			    margin-right: 0 !important;
+			}
+		}
+		.footer-logo-copyright {
+			margin-top: 0 !important;
+			padding-top: 20px !important;
+			.col-6 {
+			    width: 100%;
+			    display: table;
+			    margin: auto;
+			    text-align: center;
+			    flex: none;
+			}
+			.copyright-text {
+				text-align: center !important;
+				margin-top: 20px;
+			}
+		}
+	}
+
+}

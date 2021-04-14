@@ -1,0 +1,48 @@
+/*
+===========================
+Database Details
+===========================
+*/
+
+dbName: dbtest
+dbUser: root
+dbPass:
+dbhost: localhost
+
+/*
+===========================
+WP Admin login
+===========================
+*/
+user: jay-test
+password: zcvc1991
+
+
+/*
+=================================================
+Instructions to run this project
+
+Note: jay-caballero-test is a wp-folder.
+Also DB is attached inside "datbase" folder
+=================================================
+*/
+
+1. Install xamp, wampp or whatever tool you use to run this wp project in your local
+2. Copy the folder "jay-caballero-test" in htdocs if you use xampp.
+3. Create a database inside phpmyadmin
+   Here's the following db credentials:
+
+   dbName: dbtest
+   dbUser: root
+   dbPass:
+   dbhost: localhost
+
+4. Open "wp-config.php" file inside "jay-caballero-test" folder. Make sure that wp-config.php credentials and the database is match.
+
+4. In browser type "http://localhost/jay-caballero-test/"
+Thats it!
+
+
+Note: Please Make sure there's an internet connection so that the bootstrap 5 framework will work well. Because I only use bootstrap CDN.
+
+I also attached a "actual-video.mkv" file video so that you will see the actual look of the website
